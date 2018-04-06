@@ -2,7 +2,7 @@
 This Blender add-on allows to create multiple random trees at the same time, based on the built-in "Sapling" tree generator.
 
 ## Installation
-1. Download the and unpack the thing.
+1. Download and unpack the thing.
 2. Find the "sapling-randomizer" directory inside. It should only have a single .py file.
 3. (A) Copy the whole directory (not just the Python file!) to your Blender Scripts directory or (B) pack the "sapling-randomizer" directory as a ZIP file again and install it via Blender's add-on manager.
 4. In Blender's add-on manager, find BOTH "Sapling Tree Gen" AND "Sapling Randomizer" and enable them. This add-on uses the built-in "Sapling Tree Gen" to generate the trees, so it must be enabled.
