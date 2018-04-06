@@ -11,6 +11,7 @@ This Blender add-on allows to create multiple random trees at the same time, bas
 When you have successfully enabled both add-ons, you can invoke the Sapling Randomizer using two methods:
 - 3D view > Tool Shelf > "Create" tab, on the very bottom, you'll find a "Sapling Randomizer" button. Press it.
 - Using the quick menu (Space). Just type "Sapling Randomizer" and hit return.
+For more detail, head over to the [wiki](https://github.com/ThomasRadeke/sapling-randomizer/wiki).
 
 ## Known issues
 This is the very first release and I'm not primarily a software developer, so please use the add-on with caution.
