@@ -1,8 +1,8 @@
 bl_info = {
     "name": "Sapling Randomizer",
     "author": "Thomas Radeke",
-    "version": (0, 1, 0),
-    "blender": (2, 77, 0),
+    "version": (0, 1, 1),
+    "blender": (2, 80, 0),
     "location": "View3D > Tool Shelf > Create",
     "description": "Generate multiple randomized \"Sapling\" curves at the same time.",
     "warning": "Needs the \"Sapling Tree Gen\" add-on to be activated.",
@@ -136,7 +136,7 @@ bpy.utils.register_class(SaplingRandomizerOperator)
 class SaplingRandomizer(bpy.types.Panel):
     bl_label = "Sapling Randomizer"
     bl_space_type = "VIEW_3D"
-    bl_region_type = "TOOLS"
+    bl_region_type = 'TOOLS' if bpy.app.version < (2, 80) else 'UI'
     #bl_region_type = "UI"
     bl_category = "Create"
     bl_context = "objectmode"
