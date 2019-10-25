@@ -3,11 +3,18 @@ This Blender add-on allows to create multiple random trees at the same time, bas
 
 ## Download
 1. Download:
-  - [sapling-randomizer_0.1.1.zip](https://rahdick.at/projects/02_projects/2018-04-06_blender_addon_sapling_randomizer/sapling-randomizer_0.1.1.zip) (Blender 2.80)
+  - [sapling-randomizer_0.1.2.zip](https://github.com/ThomasRadeke/sapling-randomizer/raw/master/sapling-randomizer-0.1.2.zip) (Blender 2.80)
   - [sapling-randomizer_0.1.0.zip](https://rahdick.at/projects/02_projects/2018-04-06_blender_addon_sapling_randomizer/sapling-randomizer_0.1.0.zip) (Blender 2.7x)
   - If the direct links don't work, please visit the [project website](https://rahdick.at/en/02_projects/2018-04-06_blender_addon_sapling_randomizer) and download from there.
 2. In Blender, go to User Preferences > Add-Ons, click the "Install Add-on from File…" button on the bottom of the dialog and choose the downloaded ZIP file.
 3. Find BOTH "Sapling Tree Gen" AND "Sapling Randomizer" and enable them. This add-on uses the built-in "Sapling Tree Gen" to generate the trees, so it must be enabled.
+
+## Version 0.1.2 changes
+- Fixed Blender 2.80 Python API warnings
+- Added option for putting new objects into a collection
+- Added option for creating and assigning materials for trunks and leaves
+- Added option for preparing generated trees for use in particle systems
+- 3D cursor position is now taken into account
 
 ## Installation via GitHub
 1. Download and unpack the thing.
@@ -23,9 +30,6 @@ When you have successfully enabled both add-ons, you can invoke the Sapling Rand
 For more detail, head over to the [wiki](https://github.com/ThomasRadeke/sapling-randomizer/wiki).
 
 ## Known issues
-This is the very first release and I'm not primarily a software developer, so please use the add-on with caution.
+I'm not primarily a software developer, so please use the add-on with caution.
 - Some options are VERY SLOW, e.g. the "Maximum Branch Levels" control. Try with a low number of trees first. This depends on "Sapling"; can't do anything about it. Sorry!
 - Most options of the original "Sapling" add-on are not accessible through SR. However, you can save presets with "Sapling" and use them with SR.
-- Currently, the preset selection dropdown will only show .py files that are located in the "curve_add_sapling/presets/" directory, inside your Blender install location.
-- Using this add-on in a scene which has existing "Tree" objects will randomize their location, too. To avoid this, just generate new trees on a new layer/scene and move them into the final location when you're done. (This is because the original "Sapling" add-on doesn't allow generated object names to be changed via script, so I have no easy way to tell them apart.)
-- 3D cursor location is currently ignored.
